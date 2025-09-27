@@ -7,7 +7,7 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [isDownloading, setIsDownloading] = useState(false);
+
 
   const handleChange = (e) => {
     setFormData({
@@ -117,6 +117,7 @@ const Contact = () => {
 }
 
 export default Contact
+
 
 
 
