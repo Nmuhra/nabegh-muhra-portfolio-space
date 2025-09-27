@@ -32,10 +32,10 @@ const ExperienceAndEducation = () => {
                     </h3>
                     <div className="mb-2">
                       <p className="text-gray-300">{item.company}</p>
-                      <p className="text-gray-400 text-sm">{`${exp.startDate} - ${exp.endDate}`}</p>
+                      <p className="text-gray-400 text-sm">{`${item.startDate} - ${item.endDate}`}</p>
                     </div>
                     <ul className="text-white list-disc pl-5">
-                  {exp.extra?.map((bullet, bulletIndex) => (
+                  {item.extra?.map((bullet, bulletIndex) => (
                     <li key={`bullet-${index}-${bulletIndex}`}>{bullet}</li>
                   ))}
                 </ul>                  </div>
@@ -93,3 +93,4 @@ const ExperienceAndEducation = () => {
 };
 
 export default ExperienceAndEducation;
+
